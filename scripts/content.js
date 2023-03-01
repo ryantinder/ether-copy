@@ -71,7 +71,6 @@ const addUintFormatting = (iframe) => {
                         .getElementsByClassName("form-group")[0]
 
                     const anchor = parent.querySelector("a")
-                    console.log(anchor.innerText)
                     if (anchor &&
                         anchor.innerText.length > 0 &&
                         !anchor.innerText.includes('0x') &&
