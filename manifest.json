@@ -12,7 +12,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://*.etherscan.io/address*"
+                "https://*.etherscan.io/address*",
+                "https://*.etherscan.io/token*"
             ],
             "js": [
                 "scripts/content.js"
