@@ -1,4 +1,4 @@
-###Install
+# Install
 1. Clone repo
 2. Navigate to chrome://extensions
 3. Make sure you are in "developer mode"
