@@ -1,7 +1,16 @@
+import {ethers} from 'ethers';
 const iframe = document.getElementById("readcontractiframe");
 const proxy_iframe = document.getElementById("readproxycontractiframe");
-
 // `document.querySelector` may return null if the selector doesn't match anything.
+
+
+
+// //register event listener for copy events on document
+// document.oncopy = (event) => {
+//     console.log('copy event', event);
+
+// }
+
 const addAddressCopies = (iframe) => {
     if (iframe) {
         iframe.addEventListener("load", () => {
@@ -24,7 +33,7 @@ const addAddressCopies = (iframe) => {
                         i.style.cursor = "pointer";
                         i.className = "far fa-copy fa-fw link-secondary";
                         i.onclick = () => {
-                            navigator.clipboard.writeText(anchor.innerText)
+                            navigator.clipboard.writeText(ethers.getAddress(anchor.innerText))
                         }
                         anchor.insertAdjacentElement("beforebegin", i)
                     }
