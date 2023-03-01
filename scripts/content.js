@@ -162,9 +162,8 @@ const addUintFormatting = (iframe) => {
                         anchor.insertAdjacentElement("afterend", e18)
                     }
                 } catch (e) {
-                    console.log(e)
+                    console.error(e)
                 }
-
             }
         })
     }
