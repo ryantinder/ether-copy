@@ -13,7 +13,13 @@
         {
             "matches": [
                 "https://*.etherscan.io/address*",
-                "https://*.etherscan.io/token*"
+                "https://*.etherscan.io/token*",
+                "https://*.arbiscan.io/address*",
+                "https://*.arbiscan.io/token*",
+                "https://*.ftmscan.com/address*",
+                "https://*.ftmscan.com/token*",
+                "https://*.polygonscan.com/address*",
+                "https://*.polygonscan.com/token*"
             ],
             "js": [
                 "scripts/content.js"
